@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 9 - HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+
+    <form method="post" action="#">
+      <!-- Input fields for personal information -->
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" /><br />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br />
+
+      <!-- Favorite shark species section -->
+      <fieldset>
+        <legend>Favorite Shark Species:</legend>
+        <label for="species1"
+          ><input
+            type="checkbox"
+            id="species1"
+            name="species"
+            value="greatWhite"
+          />Great White</label
+        ><br />
+        <label for="species2"
+          ><input
+            type="checkbox"
+            id="species2"
+            name="species"
+            value="hammerhead"
+          />Hammerhead</label
+        ><br />
+        <label for="species3"
+          ><input
+            type="checkbox"
+            id="species3"
+            name="species"
+            value="tiger"
+          />Tiger Shark</label
+        ><br />
+      </fieldset>
+
+      <!-- Section for shark-related activities -->
+      <fieldset>
+        <legend>Shark Activities:</legend>
+        <label for="activity1"
+          ><input
+            type="radio"
+            id="activity1"
+            name="activity"
+            value="diving"
+          />Diving with Sharks</label
+        ><br />
+        <label for="activity2"
+          ><input
+            type="radio"
+            id="activity2"
+            name="activity"
+            value="research"
+          />Shark Research</label
+        ><br />
+        <label for="activity3"
+          ><input
+            type="radio"
+            id="activity3"
+            name="activity"
+            value="conservation"
+          />Shark Conservation</label
+        ><br />
+      </fieldset>
+
+      <!--Section for comments -->
+      <label for="comments">Comments:</label><br />
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea
+      ><br />
+      <!--button for form submission-->
+      <input type="submit" value="Submit Form" />
+    </form>
+  </body>
+</html>
